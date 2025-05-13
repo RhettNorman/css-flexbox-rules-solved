@@ -24,6 +24,11 @@ p {
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
+.content {
+  display: flex;
+  gap: 30px;
+}
+
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
@@ -37,6 +42,45 @@ form {
 #sign-in,
 #sign-up {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#sign-in-form, #sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: inherit;
+}
+
+.form-submit-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+}
+
+.password, .email-sign-in, .email-sign-up,
+.password-sign-up, .confirm-password, .phone-number, 
+.avatar, .gender, .city, .state, .sign-in, .sign-up {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
 }
 
 a {
@@ -44,8 +88,18 @@ a {
   text-decoration: none;
 }
 
-label {
+p {
+  font-weight: normal;
+}
+
+label, div > p {
   font-weight: bold;
+}
+
+.other, .female, .male, .stayy-in {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
 }
 
 input {
@@ -57,8 +111,12 @@ input {
 input[type="checkbox"],
 input[type="radio"] {
   width: max-content;
-  height: max-content;
+  height: 30px;
   padding: 0;
+}
+
+#city, #state {
+  height: 30px;
 }
 
 input[type="submit"] {
